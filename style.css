@@ -67,7 +67,8 @@ h2{
 
     #G-map{
         width: 100%;
-        margin-inline: auto;  
+        margin-inline: auto;
+        height: 72%;  
     }
     #map{
        margin: none;
