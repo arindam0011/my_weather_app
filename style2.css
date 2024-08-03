@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+    user-select: none;
+}
+
+#app-h1{
+    font-size: 50px;
+    color:#f8f8f8;
+}
+#fetch-data{
+    background-color: #f8f8f8;
+    color: blueviolet;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
