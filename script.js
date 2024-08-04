@@ -11,7 +11,7 @@ fetchButton.addEventListener('click', async () => {
                     position => resolve(position),
                 );
             } else {
-                reject("Geolocation is not supported by this browser.");
+                reject("Unable to retrieve your location");
             }
         });
     }
@@ -30,7 +30,7 @@ fetchButton.addEventListener('click', async () => {
           
         })
         .catch((error) => {
-            console.log(error);
+            alert(error);
         });
     
 });

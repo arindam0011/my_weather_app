@@ -72,6 +72,7 @@ function getTimeZone(seconds) {
 // 270°: West
 // 315°: Northwest
 
+
 function getWindDirection(degrees) {
     if (degrees === 0 || degrees === 360) {
         return 'North';
