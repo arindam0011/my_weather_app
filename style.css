@@ -44,7 +44,7 @@ h2{
     display: flex;
     margin-top: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 .weather-data{
     background-color: rgb(64, 12, 112);
