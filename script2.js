@@ -34,7 +34,7 @@ long.innerText+=` ${longitude}`;
         let feels_like = document.getElementById('feels-like');
 
         User_location.innerText += ` ${data.timezone}`;
-        windSpeed.innerText += ` ${data.current.wind_speed*3.6} km/h`;
+        windSpeed.innerText += ` ${(data.current.wind_speed*3.6).toFixed(2)} km/h`;
         humidity.innerText += ` ${data.current.humidity}`;
         Time_zone.innerText += ` UTC${utc}`;
         pressure.innerText += ` ${(data.current.pressure/1013.25).toFixed(2)} atm`;
