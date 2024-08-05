@@ -1,5 +1,5 @@
-let latitude=window.localStorage.getItem('latetude');
-let longitude=window.localStorage.getItem('longtitude');
+let latitude=window.sessionStorage.getItem('latetude');
+let longitude=window.sessionStorage.getItem('longtitude');
 
 let mapIframe=document.getElementById('G-map');
 mapIframe.src=`https://maps.google.com/maps?q=${latitude}, ${longitude}&z=15&output=embed`;

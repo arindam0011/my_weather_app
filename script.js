@@ -1,7 +1,8 @@
-const fetchButton = document.getElementById('fetch-data');
+document.addEventListener('DOMContentLoaded', () => {
+    const fetchButton = document.getElementById('fetch-data');
+    window.sessionStorage.removeItem('latitude');
+    window.sessionStorage.removeItem('longitude');
 
-let lat;
-let long;
 
 fetchButton.addEventListener('click', async () => {
     function getPosition() {
@@ -20,11 +21,11 @@ fetchButton.addEventListener('click', async () => {
     
     getPosition()
         .then((position) => {
-            lat = position.coords.latitude;
-            long = position.coords.longitude;
+           let lat = position.coords.latitude;
+           let long = position.coords.longitude;
             console.log(lat, long);
-            window.localStorage.setItem('latetude', lat);
-            window.localStorage.setItem('longtitude', long);
+            window.sessionStorage.setItem('latetude', lat);
+            window.sessionStorage.setItem('longtitude', long);
             
             window.location.href = 'main.html';
           
@@ -35,8 +36,4 @@ fetchButton.addEventListener('click', async () => {
     
 });
 
-
-
-
-
-
+})
