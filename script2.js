@@ -10,9 +10,10 @@ let long=document.getElementById('long');
 lat.innerText+=` ${latitude}`;
 
 long.innerText+=` ${longitude}`;
+const API_KEY = '7c1395001860d0592ae523653f49e8f3';
 
 
- fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,daily&APPID=7c1395001860d0592ae523653f49e8f3`)
+ fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,daily&APPID=${API_KEY}`)
 .then((responce)=>{
     if(!responce.ok){
         throw new Error('something went wrong');
